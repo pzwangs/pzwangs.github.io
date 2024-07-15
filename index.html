@@ -170,13 +170,60 @@ h2{ color:#009933; background:#DFFDE7; font-size:30px;}
  font-size: 18px;
  margin-bottom: 10px;
 }
-
+/* 悬浮广告css开始 */
+.ad-box {
+    position: fixed;
+    top: 80px;
+    right: 30px;
+    width: 35px;
+    padding: 10px;
+    background-color: #FFFFFF00;
+    color: #000;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0);
+    text-align: center;
+    z-index: 1000;
+}
+.ad-box a {
+    color: #fff;
+    text-decoration: none;
+}
+/* 悬浮广告鼠标停靠显示css */
+ .ad-container {
+    position: relative;
+    inline-size: 100px; /* 宽度根据实际图片调整 */
+    block-size: 32px; /* 高度根据实际图片调整 */
+    cursor: pointer;
+  }
+  .ad-banner {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -130%;
+    inline-size: 150px; /* 宽度根据实际banner图调整 */
+    block-size: 150px; /* 高度根据实际banner图调整 */
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    z-index: 10;
+  }
+  .ad-container:hover .ad-banner {
+    display: block;
+  }
+ /* 悬浮广告css结束 */
     </style>
 <title>~Pzwang、王蓬网址导航~</title>
 <link rel="icon" href="https://pzwangs.github.io/SimpleIconsPiapro.png" type="image/png" />
 </head>
 <body>
-
+ <!--悬浮广告开始--> 
+<div class="ad-box">
+<div class="ad-container">
+  <img src="https://img.alicdn.com/tfs/TB1qEwuzrj1gK0jSZFOXXc7GpXa-32-32.ico" alt="支付宝红包">
+  <div class="ad-banner">
+    <img src="https://s2.loli.net/2024/04/19/AaMs5YcQFeudSDG.png" alt="Ad Banner">
+  </div>
+</div>
+</div>
+  <!--悬浮广告结束--> 
   <!--头部-->
   <header>
     <ul class="nav clearfix">

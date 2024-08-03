@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>导航栏示例</title>
+<style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+ 
+  li {
+    float: left;
+  }
+ 
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+ 
+  li a:hover {
+    background-color: #111;
+  }
+  .content {
+    padding-top: 60px; /* Same height as the navbar */
+    width: 100%;
+  }
+</style>
+</head>
+<body>
+ 
+<ul>
+  <li><a class="active" href="#home">首页</a></li>
+  <li><a href="#news">软件</a></li>
+  <li><a href="#contact">影视</a></li>
+  <li><a href="#about">百度</a></li>
+  <li><a href="#about">关于</a></li>
+</ul >
+
+<div id="home" class="content">
+  <h1>Home</h1>
+  <p>Welcome to the home page.</p>
+</div>
+ 
+<div id="news" class="content" style="display:none;">
+  <h1>News</h1>
+  <p>Here you can find the latest news.</p>
+</div>
+ 
+<div id="contact" class="content" style="display:none;">
+  <h1>Contact</h1>
+  <p>Contact us via email or phone.</p>
+</div>
+ 
+<div id="about" class="content" style="display:none;">
+  <h1>About</h1>
+  <p>Learn more about our company.</p>
+</div>
+ 
+<script>
+window.onload = function() {
+  // Get current URL
+  var currentUrl = window.location.href;
+ 
+  // Get all content divs
+  var contentDivs = document.querySelectorAll('.content');
+ 
+  // Hide all content divs by default
+  contentDivs.forEach(function(div) {
+    div.style.display = 'none';
+  });
+ 
+  // Show the div with the same ID as the current URL's hash
+  var hash = currentUrl.split('#').pop();
+  document.getElementById(hash).style.display = 'block';
+};
+</script>
+ 
+</body>
+</html>

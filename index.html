@@ -121,7 +121,19 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
-
+ /* 欢迎来到我的网站动态文字*/
+  .text-container {
+    font-size: 3em;
+    text-align: center;
+  }
+  @keyframes blink {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .blink {
+    animation: blink 1s infinite;
+  }
+  
  /* 常用网站*/
   .wangzhan-box {
     margin: 8px 0px 8px 0px;
@@ -254,6 +266,7 @@ margin-bottom:260px
   <!-- Add more images here -->
 </div>
 <div class="welcome-box">
+<div class="dynamic-text blink">这是动态文字！</div>
   <h1>欢迎来到我的网站</h1>
   <p>这是一个有趣的、好玩的、高级的网站！！！</p>
 </div>
@@ -579,6 +592,16 @@ margin-bottom:260px
   }
  
   setInterval(changeImage, 3000); // Change image every 3 seconds
+  
+  // 动态改变文字内容的函数
+  function updateText() {
+    var textContainer = document.querySelector('.dynamic-text');
+    var messages = ['Welcome!', 'Hello, 2024!', 'Pzwang.'];
+    var index = Math.floor(Math.random() * messages.length);
+    textContainer.textContent = messages[index];
+  }
+  // 设置定时器，每隔一定时间更新文字内容
+  setInterval(updateText, 3000); // 每3秒更新一次
 </script>
 
 <div class="green-bg" align="center" style="margin-top:10px">
@@ -587,7 +610,7 @@ margin-bottom:260px
     <p>本站纯属个人学习交流之用,如有侵犯您的版权请与我联系,我会马上改正并删除! </FONT></p>
 </div>
 <div align="center" style="margin-top:10px ; margin-bottom:30px">  
-  <a href="https://github.com/" target="github"  style="color: rgba(0, 0, 0, 0.5);">   █▓2024.10.17▓█   </a>
+  <a href="https://github.com/" target="github"  style="color: rgba(0, 0, 0, 0.5);">   █▓2024.10.21▓█   </a>
 </div>
 </body>
 </html>

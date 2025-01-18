@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<script>
+function toggleContent() {
+  var content = document.getElementById("content");
+  if (content.style.display === "none") {
+    content.style.display = "block";
+  } else {
+    content.style.display = "none";
+  }
+}
+</script>
+
+    <style>
+* {
+ margin: 0;
+ padding: 0;
+}
+body {
+ margin: 0 auto;
+ font-size: 14px;
+ color: #333;
+ position: relative;
+}
+img {
+ border: none;
+}
+a {
+ cursor: pointer;
+ color: #333;
+ text-decoration: none;
+ outline: none;
+}
+ul {
+ list-style-type: none;
+}
+
+div.clear {
+ font: 0px Arial;
+ line-height: 0;
+ height: 0;
+ overflow: hidden;
+ clear: both;
+}
+.clearfix::after {
+ content: "";
+ display: block;
+ clear: both;
+}
+
+body {
+ background:#99CCCC;
+ background-size: cover;
+ padding-top:0px;
+ padding-bottom:0px;
+ width: 1100px;
+ margin-left: auto;
+ margin-right: auto;
+}
+header {
+ height: 60px;
+ background:#009966;
+ 
+}
+.nav li {
+ line-height: 60px;
+ float: left;
+ width: 25%;
+ text-align: center;
+ font-size: 22px;
+}
+.nav li a {
+ color:#FFFFFF;
+}
+.banner {
+ display: block;
+}
+.banner img {
+ width: 100%;
+ display: block;
+}
+.con {
+ padding: 15px;
+ background: #fff;
+}
+.top {
+ margin-bottom: 20px;
+}
+.top .pic {
+ float: left;
+ width: 440px;
+}
+.top .pic img {
+ 
+ padding: 3px;
+ width: 100%;
+}
+.top .text {
+ float: right;
+ width: 610px;
+ line-height: 26px;
+}
+.top .text h2 {
+ font-size: 18px;
+}
+.title {
+ color: #2d1f16;
+ line-height: 28px;
+ margin: 10px 0;
+}
+.title h2 {
+ font-size: 18px;
+}
+.tupian li {
+ float: left;
+ width: 23%;
+ margin: 1%;
+ height: 170px;
+}
+.tupian li img {
+ 
+ width: 100%;
+ height: 100%;
+ border-radius:20px;
+}
+.pinglun {
+ margin-bottom: 20px;
+}
+.pinglun .text {
+ line-height: 26px;
+}
+footer {
+ background: #009966;
+ color:#fff;
+ padding-left:30px;
+font-size: 12px;
+ line-height: 45px;
+}
+h2{ color:#009933; background:#DFFDE7; font-size:30px;}
+.juese li {
+ float: left;
+ width: 100%;
+ height: 270px;
+ margin-bottom: 20px;
+}
+.juese li .pic {
+ width: 20%;
+ float: right;
+ height: 270px;
+}
+.juese li .pic img {
+ width: 100%;
+ height: 100%;
+ 
+}
+.juese li .text {
+ float: left;
+ width: 75%;
+ height: 270px;
+ 
+ 
+ line-height: 26px;
+ padding: 15px;
+ box-sizing: border-box;
+}
+.juese li .text h2 {
+ font-size: 18px;
+ margin-bottom: 10px;
+}
+/* 悬浮广告css开始 */
+.ad-box {
+    position: fixed;
+    top: 80px;
+    right: 30px;
+    width: 35px;
+    padding: 10px;
+    background-color: #FFFFFF00;
+    color: #000;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0);
+    text-align: center;
+    z-index: 1000;
+}
+.ad-box a {
+    color: #fff;
+    text-decoration: none;
+}
+/* 悬浮广告鼠标停靠显示css */
+ .ad-container {
+    position: relative;
+    inline-size: 100px; /* 宽度根据实际图片调整 */
+    block-size: 32px; /* 高度根据实际图片调整 */
+    cursor: pointer;
+  }
+  .ad-banner {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -130%;
+    inline-size: 150px; /* 宽度根据实际banner图调整 */
+    block-size: 150px; /* 高度根据实际banner图调整 */
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    z-index: 10;
+  }
+  .ad-container:hover .ad-banner {
+    display: block;
+  }
+ /* 悬浮广告css结束 */
+    </style>
+<title>~Pzwang、王蓬网址导航~</title>
+<link rel="icon" href="https://pzwangs.github.io/SimpleIconsPiapro.png" type="image/png" />
+</head>
+<body>
+ <!--悬浮广告开始--> 
+<div class="ad-box">
+<div class="ad-container">
+  <img src="https://img.alicdn.com/tfs/TB1qEwuzrj1gK0jSZFOXXc7GpXa-32-32.ico" alt="支付宝红包">
+  <div class="ad-banner">
+    <img src="https://s2.loli.net/2024/04/19/AaMs5YcQFeudSDG.png" alt="Ad Banner">
+  </div>
+</div>
+</div>
+  <!--悬浮广告结束--> 
+  <!--头部-->
+  <header>
+    <ul class="nav clearfix">
+      <li><a href="index.html"><FONT color=#99B513>首页</FONT></a></li>
+      <li><a href="soft.html">常用软件</a></li>
+      <li><a href="media.html">影视资源</a></li>
+      <li><button style="border: none; background-color: transparent; font-size: 22px; color: white; cursor:pointer" onclick="toggleContent()">百度</button></li>
+    </ul>
+  </header>
+  <div class="banner"> <img src="ad03.jpg"> </div>
+  <!--内容-->
+  <div class="con ">
+    <div class="top clearfix">
+      <div class="pic"> <video src="https://vod.pipi.cn/43903a81vodtransgzp1251246104/bbd4f07a5285890808066187974/v.f42906.mp4" class="hm_vdo" loop autoplay controls  width="100%"></video> </div>
+      <div class="text">
+        <h2>常用网址</h2>
+        <hr>
+        <DIV style="color: #009933;">
+<TABLE style="BORDER-RIGHT: 3px solid; BORDER-TOP: 3px solid; BORDER-LEFT: 3px solid; BORDER-BOTTOM: 3px solid" borderColor=#33ccff cellSpacing=10 cellPadding=6 width="100%" align=center border=3>
+<TBODY>
+<TR>
+<TD><P align=center><A href="https://www.2345.com/?kpzwang" target=_blank><FONT face=楷体_GB2312 color=#009933 size=3>2345网页导航</FONT></A></P></TD>
+<TD><P align=center><A href="https://www.baidu.com/" target=_blank><FONT face= 楷体_GB2312 color=#009933 size=3>百度</FONT></A></P></TD>
+<TD><P align=center><A href="https://www.9eip.com/" target=_blank><FONT face=楷体_GB2312 color=#009933 size=3>完美导航</FONT></A></P></TD>
+<TD><P align=center><A href="/zfb" target=_blank><FONT face= 楷体_GB2312 color=#009933 size=3>支付宝领红包</FONT></A></P></TD>
+</TR>
+<TR>
+<TD><P align=center><A href="https://font.sucai999.com" target=_blank><FONT face= 楷体_GB2312 color=#009933 size=3>字体搬运工</FONT></A></P></TD>
+<TD><P align=center><A href="https://szfilehelper.weixin.qq.com/" target=_blank><FONT face=楷体_GB2312 color=#009933 size=3>微信传输助手</FONT></A></P></TD>
+<TD><P align=center><A href="http://gtxp2.com/" target=_blank><FONT face= 楷体_GB2312 color=#009933 size=3>上海绿茶</FONT></A></P></TD>
+<TD><P align=center><A href="https://slsup.com/" target=_blank><FONT face=楷体_GB2312 color=#009933 size=3>深蓝软件 </FONT></A></P></TD>
+</TR>
+<TR>
+<TD><P align=center><A href="https://www.xiaodao.biz/" target=_blank><FONT face= 楷体_GB2312 color=#009933 size=3>小刀娱乐网</FONT></A></P></TD>
+<TD><P align=center><A href="https://www.yikm.net" target=_blank><FONT face=楷体_GB2312 color=#009933 size=3>小霸王</FONT></A></P></TD>
+<TD><P align=center><A href="http://netcut.cn/" target=_blank><FONT face= 楷体_GB2312 color=#009933 size=3>网络剪贴板</FONT></A></P></TD>
+<TD><P align=center><A href="https://shimo.im/" target=_blank><FONT face=楷体_GB2312 color=#009933 size=3>石墨文档</FONT></A></P></TD>
+</TR>
+<TR>
+<TD><P align=center><A href="https://meeting.dingtalk.com/" target=_blank><FONT face=楷体_GB2312><FONT color=#009933 size=3>钉钉会议</FONT></FONT></A></P></TD>
+<TD><P align=center><A href="https://bip.bgyfw.com/" target=_blank><FONT face=楷体_GB2312 color=#009933 size=3>碧桂园服务 </FONT></A></P></TD>
+<TD><P align=center><A href="https://www.9eip.com/" target=_blank><FONT face=楷体_GB2312 color=#009933 size=3>完美导航</FONT></A></P></TD>
+<TD><P align=center><A href="https://www.aotusss.com" target=_blank><FONT face=楷体_GB2312 color=#009933 size=3>奥兔导航</FONT></A></P></TD>
+</TR>
+<TR>
+<TD><P align=center><A href="https://www.speedtest.cn" target=_blank><FONT face=楷体_GB2312><FONT color=#009933 size=3>测速网</FONT></FONT></A></P></TD>
+<TD><P align=center><A href="http://www.jiniannet.com/page/allcolor" target=_blank><FONT face=楷体_GB2312 color=#009933 size=3>取色器</FONT></A></P></TD>
+<TD><P align=center><A href="https://zh.pixfix.com" target=_blank><FONT face=楷体_GB2312><FONT color=#009933 size=3>PIX FIX图片修复</FONT></FONT></A></P></TD>
+<TD><P align=center><A href="https://github.com" target=_blank><FONT face=楷体_GB2312 color=#009933 size=3>GitHub</FONT></A></P></TD>
+</TR>
+</TBODY>
+</TABLE>
+        </DIV>
+      </div>
+    </div>
+  <div class="pinglun tupian">
+      <div class="title">
+        <h2 align="center">关于本站</h2>
+      </div>
+      <div class="text"> 网站类型：个人网站。<hr>创建时间：初次创建2024年。<hr>感谢您访问pzwang的个人网站，本站会分享个人的一些生活经验，展示所有个人收集的绿色软件。<hr>另外还有一些个人的技术和心得文章，同时也收集了一些朋友推荐共享给我第三方好软件，但不为这些软件作任何质量保证，请自行仔细甄别。</div>
+    </div>
+    <div class="tupian">
+      <div class="title">
+        <h2 align="center">图片欣赏</h2>
+      </div>
+      <ul class="clearfix">
+        <li><img src="https://img2.baidu.com/it/u=2749347821,1550509148&fm=253&fmt=auto&app=120&f=JPEG?w=626&h=430"/></li>
+        <li><img src="https://img2.baidu.com/it/u=3863933422,57997823&fm=253&fmt=auto&app=138&f=JPEG?w=722&h=360"/></li>
+        <li><img src="https://img1.baidu.com/it/u=2872831167,2955577035&fm=253&fmt=auto&app=138&f=JPEG?w=533&h=300"/></li>
+        <li><img src="https://img1.baidu.com/it/u=691822380,645352947&fm=253&fmt=auto&app=138&f=JPEG?w=300&h=300"/></li>
+      </ul>
+    </div>
+  </div>
+
+<div id="content" style="display: none;">
+    <iframe src="https://www.baidu.com" width="100%" height="620px" frameborder="0" scrolling="yes">
+
+    </iframe>
+  这里是需要显示或隐藏的内容。
+</div>
+
+  <!--底部-->
+  <footer>
+    <p>Copyright   2019-2024   Pzwang.     手机:13659812736        在线服务微信:pzwangs</p>
+    <p> 本站所发布的全部内容源于互联网搬运，仅限于小范围内传播学习和文献参考，请在下载后24小时内删除，如果有侵权之处请第一时间联系我们删除。敬请谅解！</p>
+    <hr>
+    <a href="https://github.com" target="_blank"  style="color: rgba(0, 0, 0, 0.5);">更新   █▓2024.07.12▓█   </a>
+  </footer>
+
+</body>
+</html>
